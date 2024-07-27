@@ -1,0 +1,437 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-padding-top: 56px;
+}
+img {
+  width: 100%;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+li {
+  list-style: none;
+}
+:root {
+  --Mon: "Montserrat", sans-serif;
+  --Pop: "Poppins", sans-serif;
+  --g: rgb(247, 247, 247);
+}
+.w-90 {
+  width: 97%;
+}
+
+.h-90 {
+  height: 97%;
+}
+.mon {
+  font-family: var(--Mon);
+}
+.pop {
+  font-family: var(--Pop);
+}
+.b-g {
+  background-color: var(--g);
+}
+.team-bg {
+  background-color: rgb(91, 91, 91);
+}
+.h-style {
+  font-family: var(--Mon);
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 44px;
+  color: rgb(52, 52, 52);
+  padding-block: 60px;
+  margin: 0;
+}
+
+/* nav */
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  border-bottom: 3px solid black;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding: 0;
+}
+.my-nav .collapse a {
+  color: black;
+  font-family: var(--Pop);
+  font-size: 14px;
+  font-weight: 400;
+  margin-inline: 15px;
+}
+/* home */
+#Home {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../imgs/bg.jpg);
+  background-size: cover;
+}
+
+#Home h2 {
+  font-family: var(--Mon);
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 55px;
+  transform: translateX(20%);
+}
+#Home h1 {
+  font-family: var(--Mon);
+  font-size: 60px;
+  font-weight: 200;
+  line-height: 72px;
+  position: relative;
+  transform: translateX(-50%);
+  padding-block: 10px;
+}
+#Home h1::after {
+  content: "";
+  font-weight: 400;
+  position: absolute;
+  animation-name: header-animation;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes header-animation {
+  0% {
+    content: "|";
+  }
+  3% {
+    content: "D|";
+  }
+  5% {
+    content: "De|";
+  }
+  7% {
+    content: "Dev|";
+  }
+  10% {
+    content: "Deve|";
+  }
+  13% {
+    content: "Devel|";
+  }
+  15% {
+    content: "Develo|";
+  }
+  17% {
+    content: "Develop|";
+  }
+  20% {
+    content: "Developm|";
+  }
+  24% {
+    content: "Developme|";
+  }
+  25% {
+    content: "Developmen|";
+  }
+  27% {
+    content: "Development|";
+  }
+  30% {
+    content: "Development|";
+  }
+  32% {
+    content: "Developmen|";
+  }
+  35% {
+    content: "Developme|";
+  }
+  37% {
+    content: "Develop|";
+  }
+  40% {
+    content: "Develo|";
+  }
+  42% {
+    content: "Devel|";
+  }
+  45% {
+    content: "Deve|";
+  }
+  47% {
+    content: "Dev|";
+  }
+  50% {
+    content: "De|";
+  }
+  52% {
+    content: "Des|";
+  }
+  55% {
+    content: "Desi|";
+  }
+  57% {
+    content: "Desig|";
+  }
+  60% {
+    content: "Design|";
+  }
+  62% {
+    content: "Designe|";
+  }
+  65% {
+    content: "Designer|";
+  }
+  67% {
+    content: "Designer|";
+  }
+  70% {
+    content: "Designe|";
+  }
+  72% {
+    content: "Design|";
+  }
+  75% {
+    content: "Desig|";
+  }
+  77% {
+    content: "Desi|";
+  }
+  80% {
+    content: "Des|";
+  }
+  82% {
+    content: "De|";
+  }
+  85% {
+    content: "Dev|";
+  }
+  87% {
+    content: "Deve|";
+  }
+  90% {
+    content: "Devel|";
+  }
+  92% {
+    content: "Develo|";
+  }
+  95% {
+    content: "Develop|";
+  }
+  97% {
+    content: "Develope|";
+  }
+  100% {
+    content: "Developer|";
+  }
+}
+#Home li {
+  height: 30px;
+  width: 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+}
+
+/* about */
+.about-img {
+  position: absolute;
+  background-image: radial-gradient(
+    rgba(128, 128, 128, 0.3) 1px,
+    transparent 0
+  );
+  background-size: 10px 10px;
+  height: 100%;
+  width: 100%;
+  transform: translate(-5%, 5%);
+}
+
+.brog-bar {
+  font-size: 13px;
+  font-weight: 500;
+  height: 27px;
+  box-shadow: inset 0 0 5px 1px rgba(0, 0, 0, 0.5);
+}
+.about-btn {
+  color: black;
+  background-color: white;
+  transition: all 0.3s;
+}
+.about-btn:hover {
+  color: white;
+  background-color: black;
+  border: 1px solid black;
+}
+/* Services. */
+#Services {
+  background-color: var(--g);
+}
+.serv-icon {
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 5px;
+  height: 70px;
+  width: 70px;
+  background-color: var(--g);
+  transition: all 0.3s;
+}
+.serv-card:hover .serv-icon {
+  color: white;
+  background-color: black;
+}
+
+#Services h3 {
+  font-family: var(--Mon);
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 20px;
+  color: rgb(52, 52, 52);
+}
+
+/* port */
+.port-card .span {
+  font-family: var(--Mon);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 13px;
+  color: rgb(52, 52, 52);
+  transform: translateY(-15px);
+  transition: all 0.5s;
+}
+.port-card:hover .span {
+  transform: translateY(0);
+}
+.port-cards ul {
+  padding-block: 10px;
+  transform: translate(-20%, 20px);
+  transition: all 0.5s;
+}
+.port-card:hover ul {
+  transform: translate(-20%, 0);
+}
+.port-cards ul li {
+  color: white;
+  height: 30px;
+  width: 30px;
+  background-color: black;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+.port-cards ul li:hover {
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.overlay {
+  background-color: white;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.port-card:hover .overlay {
+  opacity: 1;
+}
+#port .nav-link {
+  color: black;
+  font-family: var(--Pop);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 23px;
+  color: rgb(34, 34, 34);
+}
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  border-radius: 0;
+  color: black;
+  border-bottom: black 3px solid;
+  background-color: inherit;
+}
+.nav-link:focus,
+.nav-link:hover {
+  color: inherit;
+}
+/* test */
+.img-con {
+  width: 10%;
+}
+.carousel-indicators [data-bs-target] {
+  background-color: rgb(134, 151, 145);
+  transform: translateY(55px);
+  height: 10px;
+  width: 10px;
+  margin-inline: 5px;
+  border-radius: 50%;
+}
+/* brif */
+#brif span {
+  color: rgb(116, 129, 130);
+}
+/* team */
+
+.team-over {
+  height: 200px;
+  width: 200px;
+  background-color: white;
+  opacity: 0;
+  transform: rotateY(180deg);
+  transition: all 0.5s;
+  z-index: 999;
+}
+.team-card:hover .team-over {
+  opacity: 0.9;
+  transform: rotateY(0deg);
+  transform: scale(1.7);
+}
+
+.team-over li {
+  margin-inline: 5px;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  transition: all 0.3s;
+}
+.team-over li:hover {
+  background-color: white;
+}
+.team-over a {
+  font-size: 12px;
+  transition: all 0.3s;
+}
+.team-over li:hover a {
+  color: black;
+}
+.team-card img {
+  transition: all 0.3s;
+}
+.team-card:hover img {
+  transform: scale(1.1);
+}
+
+/* Contact Us */
+.con-icon {
+  margin-bottom: 20px;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-color: var(--g);
+  transition: all 0.3s;
+}
+.con-card:hover .con-icon {
+  color: white;
+  background-color: black;
+}
+.form-control:focus {
+  box-shadow: none;
+  background-color: var(--g);
+}
+.con-btn {
+  color: white;
+  background-color: black;
+  transition: all 0.3s;
+}
+.con-btn:hover {
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+}

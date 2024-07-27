@@ -1,0 +1,14 @@
+/* as8ar mn 640 */
+
+/* sm */
+@media (max-width: 640px) {
+}
+
+/* md */
+@media (max-width: 768px) {
+  #Home h1,
+  #Home h1::after {
+    font-size: 30;
+    transform: translateX(0);
+  }
+}
